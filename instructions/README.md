@@ -66,6 +66,11 @@ For more information, see:
 Use either of the following methods:
 
 - To use the executable, double-click it, select **Continue**, and paste the key when prompted.
+
+	![Microsoft Defender deployment tool welcome screen with Continue and Cancel buttons.](../img/intune-lab/deployment-tool-welcome.png)
+
+	![Defender deployment tool screen with an empty field for the deployment key.](../img/intune-lab/enter-deployment-key.png)
+
 - To use the command line, open Command Prompt as an administrator and run:
 
 	```console
@@ -103,8 +108,14 @@ To enable configuration protection:
 
 1. In the Microsoft Intune admin center, go to **Endpoint security** > **Antivirus** > **Create policy**.
 1. Select **Windows** for the platform and **Windows Security Experience** for the profile.
+
+	![Create a new policy pane with Windows selected as the platform and Windows Security Experience selected as the template.](../img/intune-lab/windows-security-experience-policy.png)
+
 1. Enter a descriptive name for the policy, and then select **Next**.
 1. Under **Configuration settings**, locate **Controlled Configuration (Device)** and select **Controlled Configuration (On)**.
+
+	![Configuration settings page with Configuration Protection set to On.](../img/intune-lab/enable-configuration-protection.png)
+
 1. Under **Assignments**, select the device groups that should receive the policy.
 1. Review the settings and select **Create**.
 1. Sync the test device or wait for its next policy check-in.
@@ -131,7 +142,13 @@ The new SDP channels are intended to replace existing Defender update-channel co
 
 1. In the Microsoft Intune admin center, go to **Endpoint security** > **Antivirus** > **Create policy**.
 1. Select **Windows** for the platform and **Defender Safe Deployment** for the profile.
+
+	![Create a profile pane with Windows selected as the platform and Defender Safe Deployment Plan available in the profile list.](../img/intune-lab/safe-deployment-profile.png)
+
 1. Select the deployment channel for the policy.
+
+	![Defender Safe Deployment Plan configuration page with the Deployment Channel setting.](../img/intune-lab/deployment-channel-setting.png)
+
 1. Scope and assign the policy to the appropriate device groups.
 1. Review the settings and select **Create**.
 
@@ -158,6 +175,8 @@ For more information, see [Investigate devices in Microsoft Defender for Endpoin
 1. Search for and open the device that you want to review.
 1. Select **Configuration management** > **Effective settings**.
 
+	![Effective settings page for the fictitious example-device, showing Microsoft Defender Antivirus settings and effective values.](../img/intune-lab/effective-settings.png)
+
 ## 7. Offboard devices
 
 The new SDP private preview experience allows you to enable or disable individual public preview features, giving administrators more deliberate control over feature adoption.
@@ -167,13 +186,24 @@ The new SDP private preview experience allows you to enable or disable individua
 1. In the Microsoft Defender portal, go to **Settings** > **Endpoints** > **Preview features**.
 1. Enable **Embedded offboarding experience**.
 1. In the **Endpoints** area, go to **Offboarding** and select **Offboard**.
+
+	![Endpoints offboarding page showing available offboarding methods.](../img/intune-lab/offboarding-options.png)
+
 1. Under **Defender deployment tool**, select **Offboard**.
+
+	![Defender deployment tool option on the Endpoints offboarding page.](../img/intune-lab/defender-deployment-tool-offboard.png)
 
 ### Create the offboarding package
 
 1. On the **Generate Defender deployment tool with an offboarding key** page, enter a unique, descriptive package name.
+
+	![Generate the Defender deployment tool page with fields for the package name, organization, and expiration.](../img/intune-lab/generate-offboarding-package.png)
+
 1. Select **Generate**.
 1. Copy and securely save the key. You can't access the key again after you leave the page.
+
+	![Defender deployment package ready page with the offboarding key replaced by asterisks.](../img/intune-lab/offboarding-key-ready.png)
+
 1. Select **Download deployment tool**. Select the executable or ZIP format based on your organization's needs.
 1. Copy the deployment tool executable to the device that you want to offboard.
 
@@ -191,6 +221,8 @@ Use either of the following methods:
 	For a silent offboarding experience, append the `-quiet` parameter.
 
 To view offboarding packages, go to **Settings** > **Endpoints** > **Deployment packages** in the Microsoft Defender portal.
+
+![Deployment packages page with fictitious package, creator, and organization values.](../img/intune-lab/deployment-packages.png)
 
 The deployment tool log is located at:
 
