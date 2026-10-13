@@ -48,6 +48,34 @@ If you're following along during a live session:
 3. Open [`instructions/`](instructions/README.md) when this session includes
    attendee step-by-step guidance
 
+Section 1  – Manage devices with MDE that are not onboarded to Intune
+Enable Microsoft Defender for Endpoint security settings management. This capability lets us use Intune endpoint security policies to manage Defender settings on devices that are not enrolled in Intune.
+Reference: Learn about using Intune to manage Microsoft Defender settings on devices that aren't enrolled with Intune - Microsoft Intune | Microsoft Learn
+First, we’ll connect Intune and Defender and configure the management scope. .
+1.	Sign in to the Microsoft Intune admin center. 
+2.	Go to Endpoint security > Microsoft Defender for Endpoint. 
+3.	If the Defender connection has not already been configured, select Connect Microsoft Defender for Endpoint. 
+4.	Set Allow Microsoft Defender for Endpoint to enforce Endpoint Security Configurations to On. 
+5.	Select Save.
+This setting allows eligible devices that are onboarded to Defender for Endpoint, but not enrolled in Intune, to receive endpoint security policies through the MDE management channel.
+Next, we’ll identify which devices should use security settings management.
+1.	Sign in to the Microsoft Defender portal.
+2.	Go to System > Settings > Endpoints.
+3.	Under General, select Configuration management.
+4.	Open the Enforcement scope section.
+5.	Enable the platforms you want MDE to manage, such as: 
+o	Windows client devices
+o	Windows Server devices
+o	Windows Server domain controllers
+o	Linux devices
+o	macOS devices
+6.	For each applicable platform, select the available scope option appropriate for your deployment, such as all eligible devices or a limited device scope.
+7.	Review any options related to devices managed by Configuration Manager or onboarded through Defender for Cloud.
+8.	Select Save.
+
+Devices must be included in this enforcement scope before they can complete enrollment into MDE security settings management. If Manage security settings using Configuration Manager is enabled, devices with a Configuration Manager client are excluded from MDE security settings management. If it’s disabled, eligible devices with the Configuration Manager client can receive policy through the MDE management channel.
+
+
 #### On your own
 
 If you're learning at your own pace:
