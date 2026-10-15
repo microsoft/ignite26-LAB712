@@ -1,4 +1,4 @@
-# Manage endpoint protection with Microsoft Intune and Defender
+# Strengthen endpoint protection from onboarding to offboarding
 
 In this lab, you use Microsoft Intune and Microsoft Defender for Endpoint to manage endpoint security settings, onboard devices, enable configuration protection, assign safe deployment channels, review effective settings, and offboard devices.
 
