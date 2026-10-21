@@ -4,6 +4,8 @@ ms.custom: msecd-doc-authoring-106
 
 # Onboard devices
 
+**Estimated time:** 15 minutes.
+
 Onboard devices to Defender for Endpoint by using Intune or the Microsoft Defender portal.
 
 For more information, see:
@@ -14,7 +16,7 @@ For more information, see:
 ## Create the onboarding package
 
 1. In the Microsoft Defender portal, go to **Assets** > **Devices** > **Onboard**.
-1. Under **Defender deployment tool (preview)**, select **Onboard**.
+1. Under **Defender deployment tool**, select **Onboard**.
 1. On the **Generate Defender deployment tool with an access key** page, enter a unique, descriptive package name, and then select **Generate**.
 1. Copy and securely save the key. You can't access the key again after you leave the page.
 1. Select **Download deployment tool**.

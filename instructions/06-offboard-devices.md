@@ -4,6 +4,8 @@ ms.custom: msecd-doc-authoring-106
 
 # Offboard devices
 
+**Estimated time:** 10 minutes.
+
 The new SDP private preview experience allows you to enable or disable individual public preview features, giving administrators more deliberate control over feature adoption.
 
 ## Enable embedded offboarding

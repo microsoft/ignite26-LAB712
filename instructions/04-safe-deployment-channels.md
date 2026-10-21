@@ -4,6 +4,8 @@ ms.custom: msecd-doc-authoring-106
 
 # Assign device groups to safe deployment channels
 
+**Estimated time:** 10 minutes.
+
 Safe deployment plan (SDP) channels help you evaluate Defender changes on an intentionally selected device population before adopting those changes more broadly. The channels build on Microsoft's existing SDP approach and upgrade the [existing platform and engine channels on Windows](https://learn.microsoft.com/defender-endpoint/manage-gradual-rollout).
 
 The new SDP channels are intended to replace existing Defender update-channel constructs. Use the following mappings in a similar way to current update rings.

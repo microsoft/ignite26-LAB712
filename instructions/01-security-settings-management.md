@@ -4,6 +4,8 @@ ms.custom: msecd-doc-authoring-106
 
 # Manage devices with Defender for Endpoint that aren't enrolled in Intune
 
+**Estimated time:** 10 minutes.
+
 Enable Microsoft Defender for Endpoint security settings management. This capability lets you use Intune endpoint security policies to manage Defender settings on devices that aren't enrolled in Intune.
 
 For more information, see [Use Intune to manage Microsoft Defender settings on devices that aren't enrolled with Intune](https://learn.microsoft.com/intune/device-security/microsoft-defender/security-settings-management).
