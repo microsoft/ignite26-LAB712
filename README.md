@@ -21,6 +21,12 @@ Open the [detailed lab instructions](instructions/README.md) and follow along wi
 
 Open the [detailed lab instructions](instructions/README.md) and complete the exercises in order, from configuring security settings management through offboarding your test devices.
 
+#### For presenters
+
+Use the [LAB712 introductory slides (PowerPoint)](docs/slides/LAB712-context-Ignite-2026.pptx) for a 5–10 minute introduction. The deck includes a talk track and timing guidance in the speaker notes.
+
+The deck also includes internal preparation notes and source references. Remove internal material before distributing the PowerPoint externally.
+
 ### 🎯 Learning outcomes
 
 By the end of this session, you will be able to:
