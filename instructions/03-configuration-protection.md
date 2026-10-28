@@ -4,6 +4,8 @@ ms.custom: msecd-doc-authoring-106
 
 # Enable configuration protection and sync policy
 
+**Estimated time:** 15 minutes for the core activity. Attempt the optional exclusion exercises only if there is enough time within the session for the checks and cleanup.
+
 Configuration protection makes cloud-managed policy from Intune and Defender for Endpoint the authoritative source for Microsoft Defender Antivirus. Intune and Defender for Endpoint policies are enforced while conflicting settings from Group Policy, Configuration Manager, scripts, and local administrators are ignored.
 
 Configuration protection differs from tamper protection. Tamper protection safeguards a limited set of critical settings by enforcing Microsoft-defined secure defaults. Configuration protection extends enforcement across a broader configuration surface, sets recommended security values, and enforces the settings defined by your organization.
@@ -64,22 +66,27 @@ Keep the empty folder and the PowerShell window open for the checks after policy
 
 1. Under **Assignments**, select the device groups that should receive the policy.
 1. Review the settings and select **Create**.
-1. Sync the test device or wait for its next policy check-in.
 
-> [!IMPORTANT]
-> Excluding a device or removing its policy assignment removes the value delivered by that policy.
+## Sync and verify configuration protection
 
-## Optional activity: Verify that protection prevents a local exclusion
+Complete these steps whether or not you chose the optional exclusion activity.
 
-Complete this part only if you completed the baseline activity before enabling configuration protection.
-
-1. Allow the configuration-protection policy to apply. In the Intune admin center, go to **All devices**, select the test device, and select **Sync** > **Yes**. On the device, run:
+1. In the Intune admin center, go to **All devices**, select the test device, and select **Sync** > **Yes**.
+1. On the test device, use the existing elevated Windows PowerShell window if you completed the optional baseline. Otherwise, open Windows PowerShell as an administrator. Run:
 
     ```powershell
     Get-MpComputerStatus | Select-Object AMProductVersion, ControlledConfigurationState, IsTamperProtected
     ```
 
     Confirm that **ControlledConfigurationState** reports configuration protection as enabled. You can also check the device's effective settings in the Defender portal, as described in [View effective settings](05-effective-settings.md). Don't rely only on the policy being assigned, and don't continue until the device has applied it.
+
+> [!IMPORTANT]
+> Excluding a device or removing its policy assignment removes the value delivered by that policy.
+
+## Optional activity: Verify that protection prevents a local exclusion
+
+Complete this part only if you completed the baseline activity before enabling configuration protection. First complete [Sync and verify configuration protection](#sync-and-verify-configuration-protection).
+
 1. While still signed in as the local administrator, return to **Windows Security** > **Virus & threat protection** > **Manage settings** > **Add or remove exclusions**. Try to add the same folder, `C:\LAB712-AVExclusionTest`.
 1. In the same elevated PowerShell window, check the result:
 
