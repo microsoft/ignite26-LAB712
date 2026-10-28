@@ -23,7 +23,7 @@ Open the [detailed lab instructions](instructions/README.md) and complete the ex
 
 #### For presenters
 
-Use the [LAB712 introductory slides (PowerPoint)](docs/slides/LAB712-context-Ignite-2026.pptx), formatted with the supplied Microsoft Ignite template, for a short introduction. The deck includes a 5:30 core talk track and optional prompts that extend it to 7 minutes.
+Use the [LAB712 introductory slides (PowerPoint)](docs/slides/LAB712-context-Ignite-2026.pptx), formatted with the supplied Microsoft Ignite template, for a short introduction. The deck includes context-setting slides and a talk track in the speaker notes.
 
 Review the [presenter preparation and team responsibilities](docs/README.md) before delivery. Skillable environment availability and end-to-end rehearsal remain pending confirmation; the preparation checklist doesn't establish that the environment is ready.
 

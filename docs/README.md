@@ -34,7 +34,7 @@ Only first names were provided for Claire, Swapna, and Al in the excerpt. Don't 
 
 Use the [LAB712 introductory PowerPoint](slides/LAB712-context-Ignite-2026.pptx). It uses the master, theme, and built-in layouts from the Microsoft Ignite PowerPoint supplied from the meeting chat, rather than the previous custom layout.
 
-- Use the seven visible slides for the attendee introduction. The core talk track is **5:30**; optional prompts on slides 2, 3, and 5 extend it to **7 minutes**.
+- Use the five visible slides for the attendee introduction. Rehearse the current talk track and keep the introduction short so hands-on work remains the priority.
 - Review the talk track and source references in the speaker notes. The final, hidden slide is for presenter preparation, not attendee delivery.
 - Confirm the speakers and proctors before introductions. The lab owner, messaging reviewers, and lab developers aren't automatically session speakers.
 - Keep the introduction short so attendees have time for the six activities. The [lab agenda](../instructions/README.md#follow-the-lab-activities) uses a five-minute introduction estimate; rehearse the actual deck and adjust pacing within the 75-minute session.
