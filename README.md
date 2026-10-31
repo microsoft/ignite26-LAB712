@@ -6,7 +6,7 @@
 
 # [Microsoft Ignite 2026](https://ignite.microsoft.com)
 
-## 🔥LAB712: Manage endpoint protection with Microsoft Intune and Defender
+## 🔥LAB712: Strengthen endpoint protection from onboarding to offboarding
 ### Session description
 
 Manage endpoint protection with Microsoft Intune and Microsoft Defender for Endpoint, including devices that aren't enrolled in Intune. In this hands-on lab, you'll onboard devices, enable configuration protection, assign safe deployment channels, review effective settings, and offboard your test devices.
