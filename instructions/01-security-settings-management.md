@@ -23,13 +23,13 @@ This setting allows eligible devices that are onboarded to Defender for Endpoint
 ## Configure the enforcement scope
 
 1. Sign in to the [Microsoft Defender portal](https://security.microsoft.com/).
-1. Go to **System** > **Settings** > **Endpoints**.
-1. Under **General**, select **Configuration management**.
-1. Open the **Enforcement scope** section.
+1. Go to **Setup & configuration** > **Settings** > **Endpoints**.
+1. Under **Configuration management**, select **Enforcement scope**.
+1. Enalbe **Use MDE to enforce security configuration settings from Intune**.
 1. Enable the platforms that you want Defender for Endpoint to manage, such as:
 	 - Windows client devices
 	 - Windows Server devices
-	 - Windows Server domain controllers
+	 - Windows Server domain controller devices
 	 - Linux devices
 	 - macOS devices
 1. For each applicable platform, select the scope option for your deployment, such as all eligible devices or a limited device scope.
