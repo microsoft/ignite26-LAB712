@@ -47,9 +47,9 @@ Applying the supplied template doesn't establish final content, accessibility, o
 After the lab owner confirms environment availability:
 
 1. Open the confirmed attendee environment and verify access to both the Microsoft Intune admin center and the Microsoft Defender portal with the lab-provided accounts.
-1. Complete the [prerequisite checks and six activities](../instructions/README.md) in order, using only lab-provided test devices.
 1. Confirm that both the Microsoft Defender Antivirus and Microsoft Defender AI agent runtime protection profiles are available. Verify the AI settings' audit-only modes in the tenant's setting help before assigning the exercise policy, and leave **Prompt Evidence Collection** unconfigured. Don't infer device or agent support from the screenshots alone.
-1. Verify feature availability, onboarding, policy assignment, synchronization, and the results on the test device. Don't assume an assigned policy has applied.
+1. Complete the [prerequisite checks and six activities](../instructions/README.md) in order, using only lab-provided test devices. Create the policies first, then configure security settings management and onboard the device.
+1. After onboarding, verify group membership, policy deployment, synchronization, and the results on the test device. Don't wait for device application during the initial policy-creation activity or assume an assigned policy has applied.
 1. Review Microsoft Defender Antivirus settings in **Effective settings** and check deployment-channel placement separately in the safe deployment dashboard.
 1. Verify cleanup of the two exercise policies and the offboarding steps as part of the walkthrough.
 1. Rehearse the talk track with the speakers. Agree on the key messages, portal handoffs, pacing, and how to support attendees who follow closely or work independently.

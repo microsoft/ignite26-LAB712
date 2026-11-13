@@ -6,7 +6,7 @@ ms.custom: msecd-doc-authoring-106
 
 Use Microsoft Intune and Microsoft Defender for Endpoint together to manage endpoint protection from onboarding to offboarding, including devices that aren't enrolled in Intune. Defender for Endpoint security settings management lets you use Intune endpoint security policies to manage those devices.
 
-In this lab, you connect the two services, onboard a Windows lab device, create antivirus and AI agent runtime protection policies, assign safe deployment channels, and verify the applied configuration before offboarding. The goal is to see both how to configure protection and how to confirm that the device received it.
+In this lab, you create antivirus and AI agent runtime protection policies, connect the two services, onboard a Windows lab device, assign safe deployment channels, and verify the applied configuration before offboarding. The goal is to see both how to configure protection and how to confirm that the device received it.
 
 For a guided session, allow **5 minutes** for introductory context before setup. If you're completing the lab independently, use the scenario above and follow the written activities below; you don't need the presentation slides.
 
@@ -32,9 +32,9 @@ Select each activity to open its instructions and screenshots. Complete the six 
 
 | Activity | Time | Primary experience |
 |---|---|---|
+| [Manage endpoint security in Microsoft Intune](03-manage-endpoint-security.md) | 15 minutes | Create and assign antivirus and AI agent runtime protection policies |
 | [Configure security settings management](01-security-settings-management.md) | 10 minutes | Intune connection and Defender enforcement scope |
 | [Onboard devices](02-onboard-devices.md) | 15 minutes | Deployment package creation and device onboarding |
-| [Manage endpoint security in Microsoft Intune](03-manage-endpoint-security.md) | 15 minutes | Create and assign antivirus and AI agent runtime protection policies |
 | [Assign safe deployment channels](04-safe-deployment-channels.md) | 10 minutes | Deployment policy and channel verification |
 | [View effective settings](05-effective-settings.md) | 5 minutes | Review Microsoft Defender Antivirus settings in the Defender portal |
 | [Offboard devices](06-offboard-devices.md) | 10 minutes | Offboarding package creation and execution |
@@ -43,6 +43,7 @@ Plan for **75 minutes total**: **5 minutes of introduction, 5 minutes of setup, 
 
 1. Complete the prerequisites before starting activity 1.
 1. In a guided session, follow the activities with the speakers and ask a proctor for help when needed.
+1. Create the policies first. After configuring security settings management and onboarding the device, complete the [policy deployment checks](03-manage-endpoint-security.md#verify-deployment-after-onboarding). Don't wait for device-application results before onboarding.
 1. Use only confirmed audit-only modes for the AI policy example and leave **Prompt Evidence Collection** unconfigured. If the profile or its audit-only modes aren't available, ask a proctor before proceeding.
 1. Verify [deployment-channel placement](04-safe-deployment-channels.md#create-and-assign-an-sdp-policy) and review [effective settings](05-effective-settings.md) before [offboarding the test device](06-offboard-devices.md). If a policy hasn't applied, ask a proctor for help rather than assuming the activity failed.
 1. After verification, follow the instructor's direction to [clean up the two exercise policies](03-manage-endpoint-security.md#clean-up-resources) before offboarding.

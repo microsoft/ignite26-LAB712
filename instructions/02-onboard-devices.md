@@ -52,4 +52,6 @@ The tool also records events in **Windows Logs** > **Application** with source *
 
 To view deployment packages, go to **Settings** > **Endpoints** > **Deployment packages** in the Microsoft Defender portal.
 
-[Previous: Configure security settings management](01-security-settings-management.md) | [Lab agenda](README.md) | [Next: Manage endpoint security in Microsoft Intune](03-manage-endpoint-security.md)
+After onboarding, complete the [deployment checks for the antivirus and AI policies created in the first activity](03-manage-endpoint-security.md#verify-deployment-after-onboarding) before continuing to safe deployment channels.
+
+[Previous: Configure security settings management](01-security-settings-management.md) | [Lab agenda](README.md) | [Next: Assign safe deployment channels](04-safe-deployment-channels.md)
