@@ -6,14 +6,11 @@ Create two Windows endpoint security policies in Microsoft Intune: one with the 
 
 Endpoint security policies group settings for specific security capabilities. In this activity, both example profiles are in **Endpoint security** > **Antivirus**.
 
+Scope tags determine which objects admins can see. For this lab, don't add additional scope tags to either policy. For more information, see [Use role-based access control (RBAC) and scope tags for distributed IT](https://learn.microsoft.com/en-us/intune/fundamentals/role-based-access-control/scope-tags).
+
 ## Prerequisites
 
 - Sign in to the [Microsoft Intune admin center](https://intune.microsoft.com/) with the lab-provided policy-management account. The account needs permission to create, read, and assign endpoint security policies and view their deployment reports. Cleanup also requires permission to delete the exercise policies; ask a proctor to handle deletion if your account lacks that permission.
-- Ask a proctor to identify the existing lab test-device group for the policy assignments. Use only the group intended for your test device, not personal or production devices. Confirm device membership after onboarding.
-- Ask a proctor to confirm profile availability, licensing, supported agent versions, and device readiness for both examples.
-
-> [!IMPORTANT]
-> Use only the lab-provided accounts, device group, and test devices. Don't assign either policy to **All users** or **All devices**, modify an existing security policy, or disable device protection to complete the exercise.
 
 ## Create a Microsoft Defender Antivirus policy
 
@@ -30,7 +27,7 @@ Use the antivirus profile to configure behavior monitoring without changing unre
     ![Microsoft Defender Antivirus configuration settings, including Allow Behavior Monitoring, with the settings initially Not configured.](../img/intune-lab/configure-antivirus-settings.png)
 
     At least one setting needs a configured value before you can continue. For the setting's behavior and values, see [AllowBehaviorMonitoring](https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-defender#allowbehaviormonitoring). If the device already enforces this value, the exercise might not produce a visible change. Don't turn off tamper protection or behavior monitoring to force a change.
-1. Select **Next**. On **Scope tags**, retain the lab-provided scope or select the tags specified by the proctor, and then select **Next**.
+1. Select **Next**. On **Scope tags**, leave the existing tags unchanged without adding additional tags, and then select **Next**. If the **Scope tags** page isn't shown, continue to **Assignments**.
 1. On **Assignments**, include only the lab test-device group. Verify the group name with the proctor, and select **Next**.
 1. On **Review + create**, confirm the profile, configured setting, scope tags, and assignment. Select **Create**.
 1. Confirm that the policy appears in the antivirus policy list. Keep its name for the verification steps.
@@ -59,7 +56,7 @@ Use the AI profile as a second example of the policy-creation workflow. Configur
     | **Prompt Evidence Collection** | Leave **Not configured**. This exercise doesn't configure collection of prompt evidence. |
 
     Use only modes whose help confirms that they audit detections without blocking actions. If either protection setting has no documented audit-only mode, stop before creating or assigning the policy and ask a proctor. Don't infer option labels or numeric values, or substitute a blocking mode. **Not configured** doesn't prevent another policy from configuring prompt evidence collection.
-1. Select **Next**. On **Scope tags**, retain the lab-provided scope or select the tags specified by the proctor, and then select **Next**.
+1. Select **Next**. On **Scope tags**, leave the existing tags unchanged without adding additional tags, and then select **Next**. If the **Scope tags** page isn't shown, continue to **Assignments**.
 1. On **Assignments**, include only the same lab test-device group, and select **Next**.
 1. On **Review + create**, confirm the audit-only selections and assignment, and confirm that **Prompt Evidence Collection** is **Not configured**. Select **Create**.
 1. Confirm that the policy appears in the antivirus policy list.
