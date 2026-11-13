@@ -52,4 +52,4 @@ The tool also records events in **Windows Logs** > **Application** with source *
 
 To view deployment packages, go to **Settings** > **Endpoints** > **Deployment packages** in the Microsoft Defender portal.
 
-[Previous: Configure security settings management](01-security-settings-management.md) | [Lab agenda](README.md) | [Next: Enable configuration protection](03-configuration-protection.md)
+[Previous: Configure security settings management](01-security-settings-management.md) | [Lab agenda](README.md) | [Next: Assign safe deployment channels](04-safe-deployment-channels.md)

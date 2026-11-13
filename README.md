@@ -9,7 +9,7 @@
 ## 🔥LAB712: Strengthen endpoint protection from onboarding to offboarding
 ### Session description
 
-Manage endpoint protection with Microsoft Intune and Microsoft Defender for Endpoint, including devices that aren't enrolled in Intune. In this hands-on lab, you'll onboard devices, enable configuration protection, assign safe deployment channels, review effective settings, and offboard your test devices.
+Manage endpoint protection with Microsoft Intune and Microsoft Defender for Endpoint, including devices that aren't enrolled in Intune. In this hands-on lab, you'll onboard devices, assign safe deployment channels, review effective settings, and offboard your test devices.
 
 ### 🚀 Getting started
 
@@ -34,7 +34,7 @@ The deck also includes internal preparation notes and source references, includi
 By the end of this session, you will be able to:
 
 - Configure Defender for Endpoint security settings management and onboard devices, including devices that aren't enrolled in Intune.
-- Enable configuration protection and assign device groups to safe deployment channels through Intune.
+- Assign device groups to safe deployment channels through Intune.
 - Verify effective security settings in the Microsoft Defender portal and offboard test devices.
 
 ### 💻 Technologies used

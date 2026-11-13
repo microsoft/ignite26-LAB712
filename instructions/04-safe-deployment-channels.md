@@ -45,4 +45,4 @@ After the policy is applied, verify that the correct devices are in the intended
 - Run `Get-MpPreference -DeploymentChannel` in PowerShell.
 - In the Microsoft Defender portal, go to **Configuration Management** > **Safe deployment dashboard** > **Deployment channels**.
 
-[Previous: Enable configuration protection](03-configuration-protection.md) | [Lab agenda](README.md) | [Next: View effective settings](05-effective-settings.md)
+[Previous: Onboard devices](02-onboard-devices.md) | [Lab agenda](README.md) | [Next: View effective settings](05-effective-settings.md)
