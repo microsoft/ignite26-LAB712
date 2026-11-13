@@ -9,7 +9,7 @@
 ## 🔥LAB712: Strengthen endpoint protection from onboarding to offboarding
 ### Session description
 
-Manage endpoint protection with Microsoft Intune and Microsoft Defender for Endpoint, including devices that aren't enrolled in Intune. In this hands-on lab, you'll onboard devices, create antivirus and AI agent runtime protection policies, assign safe deployment channels, review effective settings, and offboard your test devices.
+Manage endpoint protection with Microsoft Intune and Microsoft Defender for Endpoint, including devices that aren't enrolled in Intune. In this hands-on lab, you'll create antivirus and AI agent runtime protection policies, configure security settings management, onboard devices, assign safe deployment channels, review effective settings, and offboard your test devices.
 
 ### 🚀 Getting started
 
@@ -19,7 +19,7 @@ Open the [detailed lab instructions](instructions/README.md) and follow along wi
 
 #### On your own
 
-Open the [detailed lab instructions](instructions/README.md) and complete the exercises in order, from configuring security settings management through offboarding your test devices.
+Open the [detailed lab instructions](instructions/README.md) and complete the exercises in order, from creating endpoint security policies through offboarding your test devices.
 
 #### For presenters
 
@@ -33,8 +33,8 @@ The deck also includes internal preparation notes and source references, includi
 
 By the end of this session, you will be able to:
 
-- Configure Defender for Endpoint security settings management and onboard devices, including devices that aren't enrolled in Intune.
-- Create antivirus and AI agent runtime protection policies in Intune and assign device groups to safe deployment channels.
+- Create antivirus and AI agent runtime protection policies in Intune.
+- Configure Defender for Endpoint security settings management, onboard devices that aren't enrolled in Intune, and assign safe deployment channels.
 - Verify effective security settings in the Microsoft Defender portal and offboard test devices.
 
 ### 💻 Technologies used

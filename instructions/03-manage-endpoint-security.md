@@ -1,28 +1,15 @@
----
-title: Manage Endpoint Security in Microsoft Intune
-description: Create and assign Windows endpoint security policies using the Microsoft Defender Antivirus and AI agent runtime protection profiles in this lab.
-author: SecureITBlanket
-ms.author: SecureITBlanket
-ms.service: microsoft-intune
-ms.topic: how-to
-ms.custom: msecd-doc-authoring-106
-ms.date: 11/13/2026
-#customer intent: As an endpoint security administrator, I want to create and assign Intune endpoint security policies so that I can manage protection on my lab device.
----
-
 # Manage endpoint security in Microsoft Intune
 
 **Estimated time:** 15 minutes.
 
-Create two Windows endpoint security policies in Microsoft Intune: one with the Microsoft Defender Antivirus profile and one with the Microsoft Defender AI agent runtime protection profile. Assign them only to the lab test-device group, then check their configuration and deployment status.
+Create two Windows endpoint security policies in Microsoft Intune: one with the Microsoft Defender Antivirus profile and one with the Microsoft Defender AI agent runtime protection profile. Assign them only to the lab test-device group and check their saved configuration. After the later security settings management and onboarding activities, return to check device deployment.
 
 Endpoint security policies group settings for specific security capabilities. In this activity, both example profiles are in **Endpoint security** > **Antivirus**.
 
 ## Prerequisites
 
-- Complete [Configure security settings management](01-security-settings-management.md) and [Onboard devices](02-onboard-devices.md).
 - Sign in to the [Microsoft Intune admin center](https://intune.microsoft.com/) with the lab-provided policy-management account. The account needs permission to create, read, and assign endpoint security policies and view their deployment reports. Cleanup also requires permission to delete the exercise policies; ask a proctor to handle deletion if your account lacks that permission.
-- Ask a proctor to identify the lab test-device group and confirm that it contains your onboarded device, not personal or production devices.
+- Ask a proctor to identify the existing lab test-device group for the policy assignments. Use only the group intended for your test device, not personal or production devices. Confirm device membership after onboarding.
 - Ask a proctor to confirm profile availability, licensing, supported agent versions, and device readiness for both examples.
 
 > [!IMPORTANT]
@@ -79,16 +66,27 @@ Use the AI profile as a second example of the policy-creation workflow. Configur
 
 **Expected result:** A separate AI agent runtime protection policy exists with the confirmed audit-only values and the lab test-device group assigned. This exercise demonstrates policy setup, not an AI attack simulation or proof that a supported agent has generated a detection.
 
-## Verify the policies
+## Verify policy creation
 
-Check the saved configuration and deployment results separately.
+Check the saved configuration now. Device application is verified after onboarding, not during this first activity.
 
 1. In **Endpoint security** > **Antivirus**, open each policy you created. Review its properties and confirm its configured settings and assignment.
+1. Record the two policy names for the deployment checks after onboarding.
+1. Continue to [Configure security settings management](01-security-settings-management.md), and then [Onboard devices](02-onboard-devices.md).
+
+**Expected result:** You can identify both policies, explain their configured settings and target group, and distinguish policy creation from device application.
+
+## Verify deployment after onboarding
+
+Return to this section after completing security settings management and onboarding. Keep the policies assigned while the device receives its configuration.
+
+1. Ask a proctor to confirm that the onboarded device is a member of the lab test-device group assigned to both policies.
+1. In **Endpoint security** > **Antivirus**, open each policy you created.
 1. Review the policy's device deployment report for the test device. Check for pending, error, or conflict results rather than assuming that a saved assignment means success.
 1. If a policy hasn't applied, ask a proctor to check device eligibility, group membership, synchronization, and conflicting policies. Don't change an existing baseline or weaken protection to resolve a lab result.
 1. Continue to [Assign safe deployment channels](04-safe-deployment-channels.md). Later, use [View effective settings](05-effective-settings.md) to review the antivirus setting on the device. Don't assume that the AI profile appears in that same view.
 
-**Expected result:** You can identify both policies, explain their configured settings and target group, and distinguish policy creation from device application. If a deployment result is unresolved, ask a proctor for help before treating the activity as complete.
+**Expected result:** You can identify the test device's deployment result for each policy. If a result is unresolved, ask a proctor for help before treating deployment verification as complete.
 
 ## Clean up resources
 
@@ -105,4 +103,4 @@ Deleting a policy isn't evidence that every device setting has immediately rever
 - [Endpoint security features in Microsoft Intune](https://learn.microsoft.com/en-us/intune/device-security/endpoint-security-policies#endpoint-security-features)
 - [Create endpoint security policies](https://learn.microsoft.com/en-us/intune/device-configuration/endpoint-security/manage-policies#create-endpoint-security-policies)
 
-[Previous: Onboard devices](02-onboard-devices.md) | [Lab agenda](README.md) | [Next: Assign safe deployment channels](04-safe-deployment-channels.md)
+[Lab agenda](README.md) | [Next: Configure security settings management](01-security-settings-management.md)
