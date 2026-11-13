@@ -8,6 +8,8 @@ ms.custom: msecd-doc-authoring-106
 
 The new SDP private preview experience allows you to enable or disable individual public preview features, giving administrators more deliberate control over feature adoption.
 
+After reviewing effective settings and before offboarding, follow the instructor's direction to [clean up the antivirus and AI policies created for this exercise](03-manage-endpoint-security.md#clean-up-resources). Don't delete shared lab policies.
+
 ## Enable embedded offboarding
 
 1. In the Microsoft Defender portal, go to **Settings** > **Endpoints** > **Preview features**.

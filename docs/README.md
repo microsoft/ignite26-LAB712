@@ -37,7 +37,7 @@ Use the [LAB712 introductory PowerPoint](slides/LAB712-context-Ignite-2026.pptx)
 - Use the five visible slides for the attendee introduction. Rehearse the current talk track and keep the introduction short so hands-on work remains the priority.
 - Review the talk track and source references in the speaker notes. The final, hidden slide is for presenter preparation, not attendee delivery.
 - Confirm the speakers and proctors before introductions. The lab owner, messaging reviewers, and lab developers aren't automatically session speakers.
-- Keep the introduction short so attendees have time for the five activities. The [lab agenda](../instructions/README.md#follow-the-lab-activities) estimates 60 minutes including a five-minute introduction; rehearse the actual deck and adjust pacing within the 75-minute session.
+- Keep the introduction short so attendees have time for the six activities. The [lab agenda](../instructions/README.md#follow-the-lab-activities) estimates 75 minutes including a five-minute introduction; rehearse the actual deck and adjust pacing within that session.
 - Remove internal preparation notes, internal source links, and the hidden slide before distributing the deck externally. Hiding a slide doesn't remove its contents.
 
 Applying the supplied template doesn't establish final content, accessibility, or event-design approval.
@@ -47,12 +47,13 @@ Applying the supplied template doesn't establish final content, accessibility, o
 After the lab owner confirms environment availability:
 
 1. Open the confirmed attendee environment and verify access to both the Microsoft Intune admin center and the Microsoft Defender portal with the lab-provided accounts.
-1. Complete the [prerequisite checks and five activities](../instructions/README.md) in order, using only lab-provided test devices.
+1. Complete the [prerequisite checks and six activities](../instructions/README.md) in order, using only lab-provided test devices.
+1. Confirm that both the Microsoft Defender Antivirus and Microsoft Defender AI agent runtime protection profiles are available. Verify the AI settings' audit-only modes in the tenant's setting help before assigning the exercise policy, and leave **Prompt Evidence Collection** unconfigured. Don't infer device or agent support from the screenshots alone.
 1. Verify feature availability, onboarding, policy assignment, synchronization, and the results on the test device. Don't assume an assigned policy has applied.
 1. Review Microsoft Defender Antivirus settings in **Effective settings** and check deployment-channel placement separately in the safe deployment dashboard.
-1. Verify the offboarding steps as part of the walkthrough.
+1. Verify cleanup of the two exercise policies and the offboarding steps as part of the walkthrough.
 1. Rehearse the talk track with the speakers. Agree on the key messages, portal handoffs, pacing, and how to support attendees who follow closely or work independently.
 1. Confirm how the proctors will help attendees who need assistance or join late.
 1. Record the walkthrough results and unresolved issues in the team's coordination thread. Confirm readiness with the lab owner before reporting the lab as ready.
 
-The meeting excerpt doesn't change the technical steps in the five exercise pages. Those steps still need to be verified in the confirmed Skillable environment.
+The meeting excerpt doesn't change the technical steps in the six exercise pages. Those steps still need to be verified in the confirmed Skillable environment.

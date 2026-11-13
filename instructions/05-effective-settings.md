@@ -19,6 +19,6 @@ For more information, see [Investigate devices in Microsoft Defender for Endpoin
 
 	![Effective settings page for the fictitious example-device, showing Microsoft Defender Antivirus settings and effective values.](../img/intune-lab/effective-settings.png)
 
-1. Review the Microsoft Defender Antivirus settings and their effective values. If an assigned policy's settings don't match the expected values, ask a proctor to help verify policy assignment and synchronization before drawing conclusions.
+1. Find the behavior-monitoring setting configured in [Manage endpoint security in Microsoft Intune](03-manage-endpoint-security.md#create-a-microsoft-defender-antivirus-policy) and confirm that its effective value enables behavior monitoring. If it isn't shown or doesn't match the assigned policy, ask a proctor to help verify policy assignment and synchronization before drawing conclusions. Check the AI policy's deployment status in Intune; don't assume that profile appears in this view.
 
 [Previous: Assign safe deployment channels](04-safe-deployment-channels.md) | [Lab agenda](README.md) | [Next: Offboard devices](06-offboard-devices.md)
