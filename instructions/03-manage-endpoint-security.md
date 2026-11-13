@@ -2,7 +2,7 @@
 
 **Estimated time:** 15 minutes.
 
-Create two Windows endpoint security policies in Microsoft Intune: one with the Microsoft Defender Antivirus profile and one with the Microsoft Defender AI agent runtime protection profile. Assign them only to the lab test-device group and check their saved configuration. After the later security settings management and onboarding activities, return to check device deployment.
+Create two Windows endpoint security policies in Microsoft Intune: one with the Microsoft Defender Antivirus profile and one with the Microsoft Defender AI agent runtime protection profile. After the later security settings management and onboarding activities, return to check device deployment.
 
 Endpoint security policies group settings for specific security capabilities. In this activity, both example profiles are in **Endpoint security** > **Antivirus**.
 
@@ -76,6 +76,32 @@ Check the saved configuration now. Device application is verified after onboardi
 ## Verify deployment after onboarding
 
 Return to this section after completing security settings management and onboarding. Keep the policies assigned while the device receives its configuration.
+
+### Sync from the Intune admin center
+
+Use the Intune **Sync** action for a device managed by Intune. Your account needs **Remote tasks/Sync devices** permission and access to view the device.
+
+1. Sign in to the [Microsoft Intune admin center](https://intune.microsoft.com/).
+1. Go to **Devices** > **All devices**, and select your lab test device.
+1. Check the device's **Managed by** value. If it shows **MDE**, use the Defender portal procedure below instead.
+1. On the device overview page, select **Sync** from the action bar.
+1. Select **Yes** to confirm. The sync action requests a device check-in to receive pending assigned policies.
+1. Allow time for the device to check in, then review the deployment results below. Requesting a sync doesn't confirm that either policy has applied.
+
+For more information, see [Sync devices from the Intune admin center](https://learn.microsoft.com/en-us/intune/device-management/actions/sync).
+
+### Sync a device managed by Defender for Endpoint
+
+For a device managed through Defender for Endpoint security settings management rather than Intune enrollment, use **Policy sync** in the Defender portal.
+
+1. Sign in to the [Microsoft Defender portal](https://security.microsoft.com/).
+1. Go to **Assets** > **Devices**, and select your lab test device.
+1. Select **Policy sync**. This action appears only for devices successfully managed by Defender for Endpoint. If it isn't available, ask a proctor to check the device's security settings management enrollment.
+1. Allow time for policy processing, then review the deployment results below.
+
+For more information, see [Device check-in frequency and on-demand policy sync](https://learn.microsoft.com/en-us/intune/device-security/microsoft-defender/security-settings-management#device-check-in-frequency).
+
+### Check deployment results
 
 1. Ask a proctor to confirm that the onboarded device is a member of the lab test-device group assigned to both policies.
 1. In **Endpoint security** > **Antivirus**, open each policy you created.
