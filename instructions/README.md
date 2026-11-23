@@ -12,11 +12,11 @@ For a guided session, allow **5 minutes** for introductory context before setup.
 
 ## Prerequisites
 
-- For self-guided use, bring an authorized non-production Microsoft 365 test tenant with the required Intune and Defender for Endpoint licenses. Use an account authorized to configure the connector and enforcement scope, manage and report on endpoint security policies, and generate deployment packages. In a guided session, use the environment provided by your instructor.
+- For self-guided use, bring an authorized non-production Microsoft 365 test tenant with the required Intune and Defender for Endpoint licenses. Use an account assigned with the Security Administrator or Global Adminstrator role to configure the connector and enforcement scope ), manage and report on endpoint security policies, and generate deployment packages. In a guided session, use the environment provided by your instructor.
 - Use a supported Windows test device, physical or virtual, that you can administer locally. To practice managing a device without Intune enrollment, use one that isn't enrolled in Intune or onboarded to another organization's Defender environment.
 - Prepare a dedicated Microsoft Entra device group for policy assignments. Add the test device once its device record is available. Don't assign the exercise policies to **All Devices**.
 
-Don't use a production tenant or device. Keep deployment keys and credentials out of GitHub, screenshots, and other shared material.
+For lab purposes, do not use a production tenant or device. 
 
 If you don't have a suitable tenant or Windows test device, use the Microsoft Learn links for a read-through. You won't be able to complete or verify the hands-on steps without these resources.
 
