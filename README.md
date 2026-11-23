@@ -19,7 +19,7 @@ Open the [detailed lab instructions](instructions/README.md) and follow along wi
 
 #### On your own
 
-Open the [detailed lab instructions](instructions/README.md) and complete the exercises in order, from creating endpoint security policies through offboarding your test devices.
+Open the [lab prerequisites and activities](instructions/README.md) to work through the exercises with your own authorized non-production tenant and Windows test device.
 
 #### For presenters
 

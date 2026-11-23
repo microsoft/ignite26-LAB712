@@ -22,27 +22,22 @@ The new SDP channels are intended to replace existing Defender update-channel co
 ## Create and assign an SDP policy
 
 1. In the Microsoft Intune admin center, go to **Endpoint security** > **Antivirus** > **Create policy**.
-1. Select **Windows** for the platform and **Defender Safe Deployment** for the profile.
+1. Select **Windows** for the platform and **Defender Safe Deployment** for the profile, then select **Create**. If the profile isn't available in your tenant, review the channel table and continue to Activity 5 without creating a substitute policy.
 
 	![Create a profile pane with Windows selected as the platform and Defender Safe Deployment Plan available in the profile list.](../img/intune-lab/safe-deployment-profile.png)
 
-1. Select the deployment channel for the policy.
+1. On **Basics**, enter a unique name, such as `Test-Defender-Safe-Deployment`, and select **Next**.
+1. Under **Configuration settings**, select the **Deployment Channel** for the policy.
 
 	![Defender Safe Deployment Plan configuration page with the Deployment Channel setting.](../img/intune-lab/deployment-channel-setting.png)
 
-1. Scope and assign the policy to the appropriate device groups.
+1. Assign the policy only to your dedicated test device group.
 1. Review the settings and select **Create**.
 
-It can take up to eight hours for the Intune policy to apply to devices in scope. To force a sync during testing:
+Policy application can take up to eight hours. To request a check-in, use the sync action for your device's management type in [Verify deployment after onboarding](03-manage-endpoint-security.md#verify-deployment-after-onboarding-optional).
 
-1. In the Microsoft Intune admin center, go to **All devices**.
-1. Select the device.
-1. On the action bar, select **Sync**.
-1. Select **Yes** to confirm.
+## Verify the deployment channel
 
-After the policy is applied, verify that the correct devices are in the intended channels by using either method:
-
-- Run `Get-MpPreference -DeploymentChannel` in PowerShell.
-- In the Microsoft Defender portal, go to **Configuration Management** > **Safe deployment dashboard** > **Deployment channels**.
+After the policy is applied, go to **Endpoints** > **Configuration management** > **Safe deployment dashboard** > **Deployment channels** in the Microsoft Defender portal, if the dashboard is available in your tenant. Confirm that your test device appears in the intended channel. If the dashboard is unavailable or reporting is pending, don't treat the saved policy assignment as confirmation of channel placement.
 
 [Previous: Onboard devices](02-onboard-devices.md) | [Lab agenda](README.md) | [Next: View effective settings](05-effective-settings.md)
