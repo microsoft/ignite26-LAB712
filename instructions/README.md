@@ -6,7 +6,7 @@ ms.custom: msecd-doc-authoring-106
 
 Use Microsoft Intune and Microsoft Defender for Endpoint together to manage endpoint protection from onboarding to offboarding, including devices that aren't enrolled in Intune. Defender for Endpoint security settings management lets you use Intune endpoint security policies to manage those devices.
 
-In this lab, you create antivirus and, where available, AI agent runtime protection policies, connect the two services, onboard a Windows test device, assign a safe deployment channel, and review the applied configuration before offboarding.
+In this lab, you create endpoint security policies, connect Microsoft Intune and Microsoft Defender for Endpoint ervices, onboard a Windows test device, assign a safe deployment channel, and review the applied configuration before offboarding.
 
 For a guided session, allow **5 minutes** for introductory context before setup. If you're completing the lab independently, use the scenario above and follow the written activities below; you don't need the presentation slides.
 
