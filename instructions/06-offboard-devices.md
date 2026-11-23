@@ -6,11 +6,11 @@ ms.custom: msecd-doc-authoring-106
 
 **Estimated time:** 10 minutes.
 
-Offboard only the Windows test device you onboarded for this lab. If any [deployment checks](03-manage-endpoint-security.md#verify-deployment-after-onboarding-optional) or [effective settings checks](05-effective-settings.md) you want to perform are pending, return to them before offboarding.
+Offboard only the Windows test device you onboarded for this lab. If any [deployment checks](01-manage-endpoint-security.md#verify-deployment-after-onboarding-optional) or [effective settings checks](05-effective-settings.md) you want to perform are pending, return to them before offboarding.
 
 ## Enable embedded offboarding
 
-If you haven't already enabled embedded offboarding, see [Verify public preview features](01-security-settings-management.md#verify-public-preview-features). If the embedded experience isn't available, follow the [standard Windows offboarding instructions](https://learn.microsoft.com/en-us/defender-endpoint/offboard-machines) instead of the deployment tool steps below.
+If you haven't already enabled embedded offboarding, see [Verify public preview features](02-security-settings-management.md#verify-public-preview-features). If the embedded experience isn't available, follow the [standard Windows offboarding instructions](https://learn.microsoft.com/en-us/defender-endpoint/offboard-machines) instead of the deployment tool steps below.
 
 ## Open the offboarding options
 

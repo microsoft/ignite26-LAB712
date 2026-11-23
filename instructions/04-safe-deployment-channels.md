@@ -34,10 +34,10 @@ The new SDP channels are intended to replace existing Defender update-channel co
 1. Assign the policy only to your dedicated test device group.
 1. Review the settings and select **Create**.
 
-Policy application can take up to eight hours. To request a check-in, use the sync action for your device's management type in [Verify deployment after onboarding](03-manage-endpoint-security.md#verify-deployment-after-onboarding-optional).
+Policy application can take up to eight hours. To request a check-in, use the sync action for your device's management type in [Verify deployment after onboarding](01-manage-endpoint-security.md#verify-deployment-after-onboarding-optional).
 
 ## Verify the deployment channel
 
 After the policy is applied, go to **Endpoints** > **Configuration management** > **Safe deployment dashboard** > **Deployment channels** in the Microsoft Defender portal, if the dashboard is available in your tenant. Confirm that your test device appears in the intended channel. If the dashboard is unavailable or reporting is pending, don't treat the saved policy assignment as confirmation of channel placement.
 
-[Previous: Onboard devices](02-onboard-devices.md) | [Lab agenda](README.md) | [Next: View effective settings](05-effective-settings.md)
+[Previous: Onboard devices](03-onboard-devices.md) | [Lab agenda](README.md) | [Next: View effective settings](05-effective-settings.md)

@@ -54,6 +54,6 @@ To view deployment packages, go to **Settings** > **Endpoints** > **Deployment p
 
 If you selected the tagged enforcement scope, apply the `MDE-Management` tag to your test device in the Defender device inventory once it appears. When its device record is available in Microsoft Entra, add it to your dedicated test device group and confirm membership.
 
-Device visibility, check-in, and Intune policy reporting can take a few hours. You can [check policy deployment after onboarding](03-manage-endpoint-security.md#verify-deployment-after-onboarding-optional). If the device or results aren't visible yet, continue to Activity 4 and return before offboarding.
+Device visibility, check-in, and Intune policy reporting can take a few hours. You can [check policy deployment after onboarding](01-manage-endpoint-security.md#verify-deployment-after-onboarding-optional). If the device or results aren't visible yet, continue to Activity 4 and return before offboarding.
 
-[Previous: Configure security settings management](01-security-settings-management.md) | [Lab agenda](README.md) | [Next: Assign safe deployment channels](04-safe-deployment-channels.md)
+[Previous: Configure security settings management](02-security-settings-management.md) | [Lab agenda](README.md) | [Next: Assign safe deployment channels](04-safe-deployment-channels.md)

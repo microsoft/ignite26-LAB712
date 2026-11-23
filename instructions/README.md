@@ -36,9 +36,9 @@ Select each activity to open its instructions and screenshots. Complete the six 
 
 | Activity | Time | Primary experience |
 |---|---|---|
-| [Manage endpoint security in Microsoft Intune](03-manage-endpoint-security.md) | 15 minutes | Create and assign antivirus and AI agent runtime protection policies |
-| [Configure security settings management](01-security-settings-management.md) | 10 minutes | Intune connection and Defender enforcement scope |
-| [Onboard devices](02-onboard-devices.md) | 15 minutes | Deployment package creation and device onboarding |
+| [Manage endpoint security in Microsoft Intune](01-manage-endpoint-security.md) | 15 minutes | Create and assign antivirus and AI agent runtime protection policies |
+| [Configure security settings management](02-security-settings-management.md) | 10 minutes | Intune connection and Defender enforcement scope |
+| [Onboard devices](03-onboard-devices.md) | 15 minutes | Deployment package creation and device onboarding |
 | [Assign safe deployment channels](04-safe-deployment-channels.md) | 10 minutes | Deployment policy and channel verification |
 | [View effective settings](05-effective-settings.md) | 5 minutes | Review Microsoft Defender Antivirus settings in the Defender portal |
 | [Offboard devices](06-offboard-devices.md) | 10 minutes | Offboarding package creation and execution |
@@ -46,7 +46,7 @@ Select each activity to open its instructions and screenshots. Complete the six 
 Allow **about 75 minutes** for the introduction, portal setup, and six core activities. This estimate excludes preparing your test environment, first-time Defender provisioning, and waits for device check-in or policy results.
 
 1. Create and assign the policies first. Use audit-only modes for the AI policy and leave **Prompt Evidence Collection** unconfigured. Skip the AI exercise if the profile or audit-only modes aren't available.
-1. After configuring security settings management and onboarding, you can [check policy deployment](03-manage-endpoint-security.md#verify-deployment-after-onboarding-optional). If results are pending, keep going and return to the check before offboarding.
+1. After configuring security settings management and onboarding, you can [check policy deployment](01-manage-endpoint-security.md#verify-deployment-after-onboarding-optional). If results are pending, keep going and return to the check before offboarding.
 1. Check [deployment-channel placement](04-safe-deployment-channels.md#verify-the-deployment-channel) separately from [effective settings](05-effective-settings.md). Finish the checks you want to perform before [offboarding the test device](06-offboard-devices.md).
 
 ## Lab completion

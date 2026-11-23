@@ -83,7 +83,7 @@ These walkthroughs are read-only. Inspect the profiles without creating, saving,
 - **Attack surface reduction:** Go to **Endpoint security** > **Attack surface reduction** and inspect the **Attack surface reduction rules** profile. Review rule actions such as **Block** and **Audit**, and compare rules for Office application behavior, executable content, and credential protection. See [Manage attack surface reduction settings with Intune](https://learn.microsoft.com/en-us/intune/device-configuration/endpoint-security/attack-surface-reduction).
 - **Endpoint detection and response:** Go to **Endpoint security** > **Endpoint detection and response** and review the available profiles and Defender for Endpoint onboarding settings. Intune configures supported onboarding and EDR settings; Defender provides detection, investigation, and response. See the [EDR overview](https://learn.microsoft.com/en-us/defender-endpoint/overview-endpoint-detection-response).
 
-When you're ready for [Activity 2: Configure security settings management](01-security-settings-management.md), return to the Defender portal and confirm **Endpoints** appears under **Settings**.
+When you're ready for [Activity 2: Configure security settings management](02-security-settings-management.md), return to the Defender portal and confirm **Endpoints** appears under **Settings**.
 
 ## Verify deployment after onboarding (optional)
 
@@ -140,4 +140,4 @@ Deleting a policy doesn't confirm that every device setting has reverted.
 - [Create endpoint security policies](https://learn.microsoft.com/en-us/intune/device-configuration/endpoint-security/manage-policies#create-endpoint-security-policies)
 - [Microsoft Defender AI agent runtime protection](https://learn.microsoft.com/en-us/defender-endpoint/ai-agent-runtime-protection-overview)
 
-[Lab agenda](README.md) | [Next: Configure security settings management](01-security-settings-management.md)
+[Lab agenda](README.md) | [Next: Configure security settings management](02-security-settings-management.md)

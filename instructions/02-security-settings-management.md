@@ -56,4 +56,4 @@ This setting allows eligible devices that are onboarded to Defender for Endpoint
 
 Devices must be included in this enforcement scope before they can complete enrollment into Defender for Endpoint security settings management. If **Manage security settings using Configuration Manager** is enabled, devices with a Configuration Manager client are excluded from Defender for Endpoint security settings management. If it's disabled, eligible devices with the Configuration Manager client can receive policy through the Defender for Endpoint management channel.
 
-[Previous: Manage endpoint security in Microsoft Intune](03-manage-endpoint-security.md) | [Lab agenda](README.md) | [Next: Onboard devices](02-onboard-devices.md)
+[Previous: Manage endpoint security in Microsoft Intune](01-manage-endpoint-security.md) | [Lab agenda](README.md) | [Next: Onboard devices](03-onboard-devices.md)
