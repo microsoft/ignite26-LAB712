@@ -77,13 +77,13 @@ Check the saved configuration now. You can check device application after onboar
 
 ## Explore other endpoint security policies (optional)
 
-These walkthroughs are read-only. Inspect the profiles without creating, saving, or assigning policies. You can do this while Defender provisions.
+These walkthroughs are read-only. Inspect the profiles without creating, saving, or assigning policies.
 
 - **Firewall:** Go to **Endpoint security** > **Firewall** > **Create Policy**. Select **Windows** and inspect the **Windows Firewall** profile's configuration settings for Domain, Private, and Public networks. Exit without saving. Repeat with **Windows Firewall Rules** to inspect how individual rules specify direction, ports, protocols, and applications. See [Manage firewall settings with Intune](https://learn.microsoft.com/en-us/intune/device-configuration/endpoint-security/firewall).
 - **Attack surface reduction:** Go to **Endpoint security** > **Attack surface reduction** and inspect the **Attack surface reduction rules** profile. Review rule actions such as **Block** and **Audit**, and compare rules for Office application behavior, executable content, and credential protection. See [Manage attack surface reduction settings with Intune](https://learn.microsoft.com/en-us/intune/device-configuration/endpoint-security/attack-surface-reduction).
 - **Endpoint detection and response:** Go to **Endpoint security** > **Endpoint detection and response** and review the available profiles and Defender for Endpoint onboarding settings. Intune configures supported onboarding and EDR settings; Defender provides detection, investigation, and response. See the [EDR overview](https://learn.microsoft.com/en-us/defender-endpoint/overview-endpoint-detection-response).
 
-When you're ready for [Activity 2: Configure security settings management](01-security-settings-management.md), return to the Defender portal and confirm **Endpoints** appears under **Settings**.
+When you're ready for [Activity 2: Configure security settings management](02-security-settings-management.md), return to the Defender portal and confirm **Endpoints** appears under **Settings**.
 
 ## Verify deployment after onboarding (optional)
 
@@ -91,33 +91,20 @@ Return to this section after completing security settings management and onboard
 
 Allow a few hours for the device to appear in the portal, check in, and show policy results in Intune. A manual sync requests a check-in; it doesn't make reporting immediate. If the device or results aren't visible yet, continue to [Activity 4](04-safe-deployment-channels.md) and return to this check before offboarding.
 
-### Sync from the Intune admin center
-
-Use the Intune **Sync** action for a device managed by Intune. Your account needs **Remote tasks/Sync devices** permission and access to view the device.
-
-1. Sign in to the [Microsoft Intune admin center](https://intune.microsoft.com/).
-1. Go to **Devices** > **All devices**, and select your lab test device.
-1. Check the device's **Managed by** value. If it shows **MDE**, use the Defender portal procedure below instead.
-1. On the device overview page, select **Sync** from the action bar.
-1. Select **Yes** to confirm. The sync action requests a device check-in to receive pending assigned policies.
-1. Allow time for the device to check in, then review the deployment results below. Requesting a sync doesn't confirm that either policy has applied.
-
-For more information, see [Sync devices from the Intune admin center](https://learn.microsoft.com/en-us/intune/device-management/actions/sync).
-
 ### Sync a device managed by Defender for Endpoint
 
 For a device managed through Defender for Endpoint security settings management rather than Intune enrollment, use **Policy sync** in the Defender portal.
 
 1. Sign in to the [Microsoft Defender portal](https://security.microsoft.com/).
 1. Go to **Assets** > **Devices**, and select your lab test device.
-1. Select **Policy sync**. This action appears only for devices successfully managed by Defender for Endpoint. If it isn't available, check the device's management status, eligibility, and enforcement scope.
+1. On the device page, open the three-dot menu (**...**) next to **Set criticality** and select **Policy sync**. This action appears only for devices successfully managed by Defender for Endpoint. If it isn't available, check the device's management status, eligibility, and enforcement scope.
 1. Allow time for policy processing, then review the deployment results below.
 
 For more information, see [Device check-in frequency and on-demand policy sync](https://learn.microsoft.com/en-us/intune/device-security/microsoft-defender/security-settings-management#device-check-in-frequency).
 
 ### Check deployment results
 
-1. In Microsoft Entra, confirm that the onboarded device is a member of the dedicated test device group assigned to the policies you created.
+1. In the Microsoft Intune admin center, go to **Groups** > **All groups**, select your dedicated test device group, and open **Members**. Confirm the onboarded device is in the group assigned to the policies you created.
 1. In **Endpoint security** > **Antivirus**, open each policy you created.
 1. Review the policy's device deployment report for the test device. Check for pending, error, or conflict results rather than assuming that a saved assignment means success.
 1. If a policy hasn't applied, check device eligibility, group membership, synchronization, and conflicting policies. Don't change an existing baseline or weaken protection to resolve a lab result.
@@ -140,4 +127,4 @@ Deleting a policy doesn't confirm that every device setting has reverted.
 - [Create endpoint security policies](https://learn.microsoft.com/en-us/intune/device-configuration/endpoint-security/manage-policies#create-endpoint-security-policies)
 - [Microsoft Defender AI agent runtime protection](https://learn.microsoft.com/en-us/defender-endpoint/ai-agent-runtime-protection-overview)
 
-[Lab agenda](README.md) | [Next: Configure security settings management](01-security-settings-management.md)
+[Lab agenda](README.md) | [Next: Configure security settings management](02-security-settings-management.md)

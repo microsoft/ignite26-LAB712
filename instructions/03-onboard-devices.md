@@ -15,7 +15,7 @@ For more information, see:
 
 ## Create the onboarding package
 
-1. In the Microsoft Defender portal, go to **Assets** > **Devices** > **Onboard**.
+1. In the Microsoft Defender portal, go to **Setup & configuration** > **Settings** > **Endpoints**. Under **Device management**, select **Onboarding**.
 1. Under **Defender deployment tool**, select **Onboard**.
 1. On the **Generate Defender deployment tool with an access key** page, enter a unique, descriptive package name, and then select **Generate**.
 1. Copy and securely save the key. You can't access the key again after you leave the page.
@@ -32,7 +32,7 @@ Use either of the following methods:
 
 	![Defender deployment tool screen with an empty field for the deployment key.](../img/intune-lab/enter-deployment-key.png)
 
-- To use the command line, open Command Prompt as an administrator and run:
+- To use the command line, open Command Prompt as an administrator. Use `cd /d "<folder-path>"` to switch to the folder where you extracted or saved the deployment tool executable, replacing `<folder-path>` with the full folder path. Then run:
 
 	```console
 	<package-name>.exe -key:"<onboarding-key>"
@@ -48,12 +48,12 @@ Check **Assets** > **Devices** in the Microsoft Defender portal. If the device d
 C:\ProgramData\Microsoft\DefenderDeploymentTool\DefenderDeploymentTool-<COMPUTERNAME>.log
 ```
 
-Replace `<COMPUTERNAME>` with the test device name. The tool also records events in **Windows Logs** > **Application** with source **WDATPOnboarding**.
+Replace `<COMPUTERNAME>` with the test device name. To review onboarding events, open **Event Viewer**, go to **Windows Logs** > **Application**, and look for events with source **WDATPOnboarding**.
 
 To view deployment packages, go to **Settings** > **Endpoints** > **Deployment packages** in the Microsoft Defender portal.
 
 If you selected the tagged enforcement scope, apply the `MDE-Management` tag to your test device in the Defender device inventory once it appears. When its device record is available in Microsoft Entra, add it to your dedicated test device group and confirm membership.
 
-Device visibility, check-in, and Intune policy reporting can take a few hours. You can [check policy deployment after onboarding](03-manage-endpoint-security.md#verify-deployment-after-onboarding-optional). If the device or results aren't visible yet, continue to Activity 4 and return before offboarding.
+Device visibility, check-in, and Intune policy reporting can take a few hours. You can [check policy deployment after onboarding](01-manage-endpoint-security.md#verify-deployment-after-onboarding-optional). If the device or results aren't visible yet, continue to Activity 4 and return before offboarding.
 
-[Previous: Configure security settings management](01-security-settings-management.md) | [Lab agenda](README.md) | [Next: Assign safe deployment channels](04-safe-deployment-channels.md)
+[Previous: Configure security settings management](02-security-settings-management.md) | [Lab agenda](README.md) | [Next: Assign safe deployment channels](04-safe-deployment-channels.md)
