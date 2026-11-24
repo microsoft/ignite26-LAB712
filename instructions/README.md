@@ -22,13 +22,13 @@ If you don't have a suitable tenant or Windows test device, use the Microsoft Le
 
 ### Open the lab portals
 
-1. Sign in to your test tenant in the [Microsoft Defender portal](https://security.microsoft.com/) and go to **Setup & configuration** > **Settings**. If you see **Hang on!** or **Endpoints** isn't available yet, start Activity 1 while Defender provisions.
+1. Sign in to your test tenant in the [Microsoft Defender portal](https://security.microsoft.com/) and go to **Setup & configuration** > **Settings**. If you see **Hang on!** or **Endpoints** isn't available yet, wait and refresh. Don't start Activity 1 until **Endpoints** appears.
 
     ![Microsoft Defender portal loading message while it prepares the tenant's data spaces.](../img/intune-lab/defender-portal-initial-setup.png)
 
 1. In a new tab, sign in to the same test tenant in the [Microsoft Intune admin center](https://intune.microsoft.com/).
 
-First-time Defender provisioning varies by tenant. The [Microsoft Learn deployment guide](https://learn.microsoft.com/en-us/defender-endpoint/production-deployment) doesn't specify a fixed wait. Return to Defender before Activity 2 and continue once **Endpoints** appears under **Settings**.
+First-time Defender provisioning varies by tenant. The [Microsoft Learn deployment guide](https://learn.microsoft.com/en-us/defender-endpoint/production-deployment) doesn't specify a fixed wait. In Activity 2, finish the Defender settings before configuring the Intune connector.
 
 ## Follow the lab activities
 

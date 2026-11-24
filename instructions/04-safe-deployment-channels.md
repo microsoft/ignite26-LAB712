@@ -34,7 +34,7 @@ The new SDP channels are intended to replace existing Defender update-channel co
 1. Assign the policy only to your dedicated test device group.
 1. Review the settings and select **Create**.
 
-Policy application can take up to eight hours. To request a check-in, use the sync action for your device's management type in [Verify deployment after onboarding](01-manage-endpoint-security.md#verify-deployment-after-onboarding-optional).
+Policy application can take up to eight hours. To request a check-in for the lab device, use [Policy sync in the Defender portal](01-manage-endpoint-security.md#sync-a-device-managed-by-defender-for-endpoint).
 
 ## Verify the deployment channel
 
